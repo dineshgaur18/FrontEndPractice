@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html ng-app="billingApp">
+<head>
+    <title></title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+</head>
+<body ng-controller="coreController as core">
+    <nav class="navbar">
+        <div class="navbar-header">
+
+        </div>
+        <div class="container nav-tabs">
+            <ul class="nav navbar-nav">
+                <li class=""><a ui-sref="home">Home</a></li>
+                <li class=""><a ui-sref="product">Product</a></li>
+                <li class=""><a>Billing</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div ui-view></div>
+    </div>
+    <script src="Scripts/Angular/angular.js"></script>
+
+    <script src="Scripts/Angular/angular-ui-router.js"></script>
+    <script src="Scripts/jquery-3.1.1.js"></script>
+    <script src="Scripts/Bootstrap/bootstrap.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/config.js"></script>
+    <script src="app/Core/Controller/coreController.js"></script>
+    <script src="app/Core/Controller/homeController.js"></script>
+    <script src="app/Product/Controller/productController.js"></script>
+
+</body>
+</html>

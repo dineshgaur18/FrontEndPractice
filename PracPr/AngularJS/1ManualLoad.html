@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+<div ng-controller="ManualLoadController">
+    Hi, please load the Angular library, {{loadStatus}}...
+</div>
+    <script src="../lib/angular-1.5.5/angular.js"></script>
+    <script>
+        angular.module("manualLoadApp", [])
+            .controller('ManualLoadController', ['$scope', function ($scope) {
+                $scope.loadStatus = "Loaded!";
+            }]);
+
+        angular.element(document).ready(function () {
+            alert("Angular not loaded yet!");
+            angular.bootstrap(document, ['manualLoadApp']);
+        });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <style>
+        .wrapper {
+            border: 1px solid red;
+        }
+    </style>
+    <script src="../Scripts/jquery-1.9.1.min.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div>
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Checkbox</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td style="width: 100px; border:1px solid blue;">
+                                <input type="checkbox" disabled="disabled" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+
+                            <td>
+                                <input type="checkbox" disabled="disabled" />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+
+            $('.wrapper input[type="checkbox"]').each(function () {
+                alert("hello");
+                $(this).parent().css('text-align', 'center');
+            });
+        });
+
+    </script>
+</body>
+</html>
+<!--<script src="JSPractice.js"></script>-->

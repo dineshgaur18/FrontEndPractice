@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="../lib/bootstrap-3.3.6/css/bootstrap.css" rel="stylesheet" />
+    <script src="../lib/angular-1.5.5/angular.js"></script>
+</head>
+<body>
+    <div class="page-header">
+        <h3>List</h3>
+    </div>
+    <div ng-app="myApp" ng-controller="myController">
+        <ul>
+            <li ng-repeat="x in names">{{x | myFormat}}</li>
+        </ul>
+    </div>
+    <script>
+
+
+        var app = angular.module('myApp', []);
+
+        var myController = {
+            names: ['Dinesh',
+                    'Mayuresh',
+                    'Sandeep',
+                    'Jitender']
+        }
+        app.controller("myController", function (myController) {
+        });
+
+        app.filter('myFormat', function () {
+            return function (x) {
+                var i, c, txt = "";
+
+                for (i = 0; i < x.length; i++) {
+                    c = x[i];
+                    if (i % 2 == 0)
+                        c = c.toUpperCase();
+                    txt += c;
+                }
+                return txt;
+            };
+        });
+
+        function addNode() {
+            var pTag = document.createElement("p");
+
+        }
+    </script>
+
+    <div class="page-header">
+        <h3>Drop down list</h3>
+    </div>
+    <div ng-app="myApp1" ng-controller="myController1">
+        <select ng-model="selectedName" ng-options="x for x in names" ng-change="onChange(this)"></select>
+        <br />
+        <div>
+            <input type="text" ng-bind="selectedName" />
+            <label>{{selectedName}}1</label>
+            <label>{{selName }}2</label>
+        </div>
+    </div>
+
+
+    <script>
+        var app = angular.module('myApp1', []);
+        app.controller('myController1', function ($scope) {
+
+            $scope.names = ["Alpha", "Beta", "Gaama"];
+
+            $scope.onChange = function (item) {
+                //alert(item.selectedName);
+                $scope.selName = item.selectedName;
+            }
+        });
+    </script>
+
+</body>
+</html>

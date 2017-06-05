@@ -1,0 +1,78 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "PracPr", "http://localhost:65320", "{1D0E2509-1303-42C1-B39B-DD2B5D459B47}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_65320"
+		Debug.AspNetCompiler.PhysicalPath = "PracPr\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_65320\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_65320"
+		Release.AspNetCompiler.PhysicalPath = "PracPr\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_65320\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "PracPr\"
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{20E2B5F4-EC00-4261-847B-E45213F5F2B6}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularJSApp", "D:\RnD\Front End\Practice\AngularJSApp\AngularJSApp.csproj", "{DC23D534-9F5B-4E03-998D-CAAE5FBDF309}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Lifestyle-RWD", "http://localhost:62769", "{5A058A7B-DDEB-4F95-924E-44BB62217561}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_62769"
+		Debug.AspNetCompiler.PhysicalPath = "Lifestyle-RWD\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_62769\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_62769"
+		Release.AspNetCompiler.PhysicalPath = "Lifestyle-RWD\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_62769\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "Lifestyle-RWD\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1D0E2509-1303-42C1-B39B-DD2B5D459B47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D0E2509-1303-42C1-B39B-DD2B5D459B47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D0E2509-1303-42C1-B39B-DD2B5D459B47}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D0E2509-1303-42C1-B39B-DD2B5D459B47}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{DC23D534-9F5B-4E03-998D-CAAE5FBDF309}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC23D534-9F5B-4E03-998D-CAAE5FBDF309}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC23D534-9F5B-4E03-998D-CAAE5FBDF309}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC23D534-9F5B-4E03-998D-CAAE5FBDF309}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A058A7B-DDEB-4F95-924E-44BB62217561}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A058A7B-DDEB-4F95-924E-44BB62217561}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A058A7B-DDEB-4F95-924E-44BB62217561}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A058A7B-DDEB-4F95-924E-44BB62217561}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html ng-app="productApp" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script src="../lib/angular-1.5.5/angular.js"></script>
+    <title></title>
+</head>
+<body>
+    <script src="../lib/angular-1.5.5/angular.js"></script>
+    <div ng-controller="ProductListController">
+        <h1>Nested Controllers & Scope!</h1>
+
+        Click on product name
+
+        <ul>
+            <li ng-repeat="product in products" ng-click="productChange(product)" ng-style="{'color' : 'blue', 'text-decoration' : 'underline', 'cursor' : 'pointer'}">{{product}}
+                <label>Selected</label>
+            </li>
+        </ul>
+
+        <div>
+            <h2>Product Spec for {{selectedProduct}}</h2>
+            {{despcription}}
+
+        </div>
+        <script>
+            angular.module("productApp", [])
+            .service("productService", function () {
+                var products = ['Samsung G1', 'LG G1', 'iPhone 4'];
+                this.getProducts = function () { return products; }
+            })
+
+            .controller("ProductListController", function ($scope, productService) {
+                $scope.products = productService.getProducts();
+                $scope.selectedProduct = $scope.products[0];
+
+                $scope.productChange = function (product) {
+                    $scope.selectedProduct = product;
+                    console.log("Selected product", product);
+                    $scope.$broadcast("productChanged", product);
+                }
+            })
+
+            .controller("ProductDescriptionController", function ($scope, productService) {
+                $scope.$on("productChanged", function (e, product) {
+                    console.log("productChanged event ", product);
+                    $scope.description = product + " description goes here";
+                });
+            })
+        </script>
+
+    </div>
+</body>
+</html>

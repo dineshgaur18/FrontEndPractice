@@ -1,0 +1,36 @@
+﻿body
+{
+    float: inherit;
+    clear: initial;
+}
+
+h1
+{
+    color: red;
+    text-align: center;
+}
+/*
+    Hi, I am going to make awesome styles
+
+*/
+
+@font-face
+{
+    font-family:sans-serif;
+    src:url("http://website/fonts/fontfile");
+}
+
+p
+{
+overflow : scroll;
+overflow : visible;
+overflow : hidden;
+}
+
+#holder{   border: 10px dashed #ccc;width:300px; min-height:300px;margin:20px auto;}
+#holder.hover {border:10px dashed #0c0;}
+#holder img
+{
+    display: block;
+    margin: 10px auto;
+}

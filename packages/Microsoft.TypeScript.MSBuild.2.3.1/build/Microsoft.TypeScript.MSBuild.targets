@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\tools\net45\Microsoft.TypeScript.targets" Condition="'$(TargetFrameworkIdentifier)' == '.NETFramework'" />
+  <Import Project="..\tools\uap\Microsoft.TypeScript.targets" Condition="'$(TargetPlatformIdentifier)' == 'UAP'" />
+  <Import Project="..\tools\netstandard1.3\Microsoft.TypeScript.targets" Condition="'$(TargetFrameworkIdentifier)' == '.NETCoreApp'" />
+  <PropertyGroup>
+    <!--If the MSBuild is used on non-Windows OS (both Mac and Unix has the same $(OS) as Unix),
+        don't pass any toolExe so that VsTsc task will decide what to use between nodejs and node (priority is given to nodejs).
+        "nodejs" is what is called for the newer version of "node".
+        Also pass the tsc.js file to be run with nodejs. This Javascript file is installed by NuGet package -->
+    <TscToolExe Condition="'$(OS)' != 'Windows_NT'"></TscToolExe>
+    <!-- TSJavaScriptFile should never be used in net45 target but it is here to keep things consistent -->
+    <TSJavaScriptFile Condition="'$(OS)' != 'Windows_NT'">$(MSBuildThisFileDirectory)/../../tools/tsc/tsc.js</TSJavaScriptFile>
+  </PropertyGroup>
+</Project>

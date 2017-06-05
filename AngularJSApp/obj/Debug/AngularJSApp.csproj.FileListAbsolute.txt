@@ -1,0 +1,12 @@
+D:\RnD\Front End\AngularJSApp\bin\AngularJSApp.dll.config
+D:\RnD\Front End\AngularJSApp\bin\AngularJSApp.dll
+D:\RnD\Front End\AngularJSApp\bin\AngularJSApp.pdb
+D:\RnD\Front End\AngularJSApp\obj\Debug\AngularJSApp.csprojResolveAssemblyReference.cache
+D:\RnD\Front End\AngularJSApp\obj\Debug\AngularJSApp.dll
+D:\RnD\Front End\AngularJSApp\obj\Debug\AngularJSApp.pdb
+D:\RnD\Front End\Practice\AngularJSApp\bin\AngularJSApp.dll.config
+D:\RnD\Front End\Practice\AngularJSApp\bin\AngularJSApp.dll
+D:\RnD\Front End\Practice\AngularJSApp\bin\AngularJSApp.pdb
+D:\RnD\Front End\Practice\AngularJSApp\obj\Debug\AngularJSApp.csprojResolveAssemblyReference.cache
+D:\RnD\Front End\Practice\AngularJSApp\obj\Debug\AngularJSApp.dll
+D:\RnD\Front End\Practice\AngularJSApp\obj\Debug\AngularJSApp.pdb

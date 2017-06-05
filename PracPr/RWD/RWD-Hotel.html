@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Hotel Booking Site</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width:device-width, initial-scale=1" />
+    <!--<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>-->
+    <link href="../lib/bootstrap-3.3.6/css/bootstrap.css" rel="stylesheet" />
+    <link href="../lib/bootstrap-3.3.6/css/bootstrap-theme.css" rel="stylesheet" />
+    <link href="../styles/font-awesome.css" rel="stylesheet" />
+    <link href="RWD.css" rel="stylesheet" />
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+            <li class="logo">
+                <a hre="#"><i class="fa-bed"></i>Logo</a>
+            </li>
+            <li>
+                <a hre="#">Rooms</a>
+            </li>
+            <li>
+                <a hre="#">About</a>
+            </li>
+            <li>
+                <a hre="#">Contact</a>
+            </li>
+            <li class="float-right">
+                <a href="#"> Book Now</a>
+            </li>
+        </ul>
+        <div class="clearfix"></div>
+    </nav>
+    <div class="pos-rel">
+        <img src="images/hotel.jpg" alt="hotel" class="mid-bg-img" />
+        <div class="mid-cnt">
+            <div class="cnt-head">
+                <i class="fa-bed"></i>
+                Item Name
+            </div>
+            <div class="cnt-detail">
+                <div class="cnt-row">
+                    <div class="cnt-half float-left cnt-half-pad">
+                        <span><i class="fa-calendar-o"></i>Check In</span>
+                        <input type="date" class="input-text inp-block" placeholder="DD MM YYYY" />
+                    </div>
+                    <div class="cnt-half float-left cnt-half-pad">
+                        <span><i class="fa-calendar-o"></i>Check Out</span>
+                        <input type="date" class="input-text inp-block" placeholder="DD MM YYYY" />
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="cnt-row">
+                    <div class="cnt-half float-left cnt-half-pad">
+                        <span><i class="fa-male"></i>Adults</span>
+                        <input type="number" class="input-text inp-block" value="0" />
+                    </div>
+                    <div class="cnt-half float-left cnt-half-pad">
+                        <span><i class="fa-child"></i>Kids</span>
+                        <input type="number" class="input-text inp-block" value="0" />
+                    </div>
+                    <div class="clear"></div>
+
+                </div>
+                <div class="cnt-row">
+                    <button class="button"><i class="fa-search"></i> Search availability</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-header">
+        <h1>Rooms</h1>
+        <p>Make yourself at home is our slogan. We offer the best beds in the industry. Sleep well and rest well.</p>
+    </div>
+    <div>
+        <div class="cnt-row">
+            <div class="cnt-half float-left cnt-half-pad">
+                <span><i class="fa-calendar-o"></i>Check In</span>
+                <input type="date" class="input-text inp-block" placeholder="DD MM YYYY" />
+            </div>
+            <div class="cnt-half float-left cnt-half-pad">
+                <span><i class="fa-calendar-o"></i>Check Out</span>
+                <input type="date" class="input-text inp-block" placeholder="DD MM YYYY" />
+            </div>
+            <div class="cnt-half float-left cnt-half-pad">
+                <span><i class="fa-male"></i>Adults</span>
+                <input type="number" class="input-text inp-block" value="0" />
+            </div>
+            <div class="cnt-half float-left cnt-half-pad">
+                <span><i class="fa-child"></i>Kids</span>
+                <input type="number" class="input-text inp-block" value="0" />
+            </div>
+            <div class="clear"></div>
+
+
+        </div>
+    </div>
+
+
+    <script src="../lib/jquery-1.12.3.js"></script>
+    <script src="../lib/bootstrap-3.3.6/js/bootstrap.js"></script>
+</body>
+</html>

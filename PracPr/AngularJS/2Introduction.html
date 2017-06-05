@@ -1,0 +1,17 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app>
+<head>
+    <title>ng-init</title>
+</head>
+<body ng-init="valueWithoutController='This value assigned to ng-init directive in html itself - 
+    as an attribute to body tag, instead of a Controller in JS code.'">
+    <div>
+        <label style="background-color: red; font-size:x-large 14px; font-weight: bold;">
+            {{valueWithoutController}}
+        </label>
+    </div>
+
+    <script src="../lib/angular-1.5.5/angular.js"></script>
+    <script src="../Scripts/bootstrap.js"></script>
+</body>
+</html>

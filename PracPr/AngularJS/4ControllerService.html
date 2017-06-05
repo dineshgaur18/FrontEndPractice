@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script src="../lib/angular-1.5.5/angular.js"></script>
+    <title></title>
+</head>
+<body>
+    <div ng-app="productApp">
+        <div ng-controller="ProductController">
+
+            <h1>Angular with Controller</h1>
+            <input ng-model="q" />
+
+            <span ng-show="q">Searching for {{q}}</span>
+
+            <ul>
+                <li ng-repeat="product in products | filter:q">
+                    {{product}}
+                </li>
+            </ul>
+
+            <script>
+                angular.module("productApp", [])
+
+                .service("productService", function () {
+                    var products = ['iphone 4', 'iPhone 5', 'iPhone 6', 'Samsung Galaxy 5'];
+                    this.getProducts = function () {
+                        return products;
+                    }
+                })
+
+                .controller("ProductController", function ($scope, productService) {
+                    $scope.products = productService.getProducts();
+                });
+
+            </script>
+        </div>
+    </div>
+</body>
+</html>

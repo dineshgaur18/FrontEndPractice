@@ -1,0 +1,11 @@
+{
+  "name": "practice",
+  "version": "1.0.0",
+  "description": "practice app",
+  "main": "Index.js",
+  "scripts": {
+    "test": "abc"
+  },
+  "author": "dinesh",
+  "license": "ISC"
+}

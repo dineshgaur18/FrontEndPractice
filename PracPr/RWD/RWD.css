@@ -1,0 +1,143 @@
+﻿/*####- Global styles -####*/
+body {
+    font-family: Calibri, serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+    a:hover {
+        text-decoration: none;
+    }
+/*####- Global styles -####*/
+
+/*####- Common -####*/
+.float-right {
+    float: right !important;
+}
+
+.float-left {
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+.inp-block {
+    display: block;
+}
+
+.button {
+    padding: 4px 8px;
+    border: none;
+    background: #616161;
+    color:#fff;
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+}
+
+.input-text {
+    border: 1px solid #ccc;
+    line-height: 1.5;
+    font-size: 21px;
+    padding: 1px 5px;
+}
+/*####- Common -####-End*/
+
+.menu li:last-child {
+    background-color: #f1f1f1 !important;
+}
+
+    .menu li:last-child:hover {
+        background-color: #ccc !important;
+    }
+
+.menu {
+    width: 100%;
+}
+
+    .menu li.logo {
+        background-color: #F44336;
+    }
+
+    .menu li {
+        list-style: none;
+        /* width: 150px; */
+        float: left;
+        padding: 8px 16px;
+        background-color: #fff;
+        cursor: pointer;
+    }
+
+        .menu li:hover {
+            background-color: #ccc;
+        }
+
+        .menu li.logo a {
+            color: #fff;
+            font-size: 18px;
+        }
+
+        .menu li a {
+            color: #000;
+            font-size: 18px;
+        }
+
+        .menu li.logo a:hover {
+            color: #000;
+        }
+
+.pos-rel {
+    position: relative;
+}
+
+.cnt-row {
+    padding: 12px 2px;
+}
+
+    .cnt-row:after {
+        clear: both;
+    }
+
+.cnt-half {
+    width: 49.9%;
+}
+
+.cnt-half-pad {
+    padding: 0 8px;
+}
+
+.mid-bg-img {
+    height: auto;
+    width: 100%;
+}
+
+.mid-cnt {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%);
+    padding: 8px 16px;
+}
+
+.cnt-head {
+    background-color: #F44336;
+    font-size: 30px;
+    color: #fff;
+    padding: 2px 16px;
+}
+
+.cnt-detail {
+    background-color: #fff;
+    padding: 2px 16px;
+}

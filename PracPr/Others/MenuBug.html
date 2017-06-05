@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        li {
+            display: list-item;
+            text-align: -webkit-match-parent;
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: 1%;
+            left: 0;
+            z-index: 1000;
+            float: left;
+            min-width: 160px;
+            padding: 5px 0;
+            margin: 2px 0 0;
+            font-size: 14px;
+            text-align: left;
+            list-style: none;
+            background-color: #fff;
+            -webkit-background-clip: padding-box;
+            background-clip: padding-box;
+            border: 1px solid #ccc;
+            border: 1px solid rgba(0,0,0,.15);
+            border-radius: 4px;
+            -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+            box-shadow: 0 6px 12px rgba(0,0,0,.175);
+        }
+
+            .dropdown-menu > li > a {
+                display: block;
+                padding: 3px 20px;
+                clear: both;
+                font-weight: 400;
+                line-height: 1.42857143;
+                color: #333;
+                white-space: nowrap;
+            }
+
+        a {
+            color: #337ab7;
+            text-decoration: none;
+        }
+
+        a {
+            background-color: transparent;
+        }
+
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        ul.dropdown-menu a.tick:before {
+            content: "\2713";
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul class="dropdown-menu" role="menu">
+            <li><div><a>Client Objective</a></div></li>
+            <li>
+                <div class="tick">
+                    <a>Goals, Visions &amp; Purpose</a>
+                </div>
+            </li>
+            <li><a class="tick">STEEP</a></li>
+            <li class="tick"><a>Porter’s 5 Forces</a></li>
+            <li><a>Opportunities &amp; Threats</a></li>
+            <li><a>Client Value Chain</a></li>
+            <li><a>Strengths &amp; Weaknesses</a></li>
+            <li><a>Client Strategies</a></li>
+            <li><a>KPMG Strategies</a></li>
+            <li><a>Resonating Value Prop</a></li>
+            <li><a>Strategic Relationship</a></li>
+            <li><a>Relationship Action Plan</a></li>
+        </ul>
+    </div>
+</body>
+</html>
