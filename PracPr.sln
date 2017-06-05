@@ -29,7 +29,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{20E2B5
 		.nuget\packages.config = .nuget\packages.config
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularJSApp", "D:\RnD\Front End\Practice\AngularJSApp\AngularJSApp.csproj", "{DC23D534-9F5B-4E03-998D-CAAE5FBDF309}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularJSApp", "D:\RnD\Front End\FrontEndPractice\AngularJSApp\AngularJSApp.csproj", "{DC23D534-9F5B-4E03-998D-CAAE5FBDF309}"
 EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Lifestyle-RWD", "http://localhost:62769", "{5A058A7B-DDEB-4F95-924E-44BB62217561}"
 	ProjectSection(WebsiteProperties) = preProject
