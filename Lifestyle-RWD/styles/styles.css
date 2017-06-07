@@ -2,10 +2,38 @@
 }
 
 * {
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
 }
 
+/*----- global styles -------*/
+input[type="text"] {
+    box-sizing: border-box;
+    color: #ccc;
+    font-size: 12px;
+    font-weight: 400;
+    height: 50px;
+    outline: none;
+    box-shadow: none;
+    line-height: 30px;
+    border-radius: 0;
+    border: 1px solid #fff;
+}
+
+input[type=submit] {
+    padding: 12px;
+    border: none;
+    background: #fff;
+    color: #6e6e6e;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 600;
+}
+
+    input[type=submit]:hover {
+        background-color:#424242;
+        color:#fff;
+    }
 
 /*----- Common -----*/
 .pos-rel {
@@ -52,10 +80,10 @@
 .over-banner {
     background-color: #fff;
     position: absolute;
-    left: 275px;
+    left: 33%;
     top: 0px;
-    width: 400px;
-    height: 400px;
+    width: 33%;
+    height: 100%;
     opacity: 0.9;
     vertical-align: middle;
     padding: 80px 0px;
@@ -90,8 +118,48 @@
     font-weight: 600;
     line-height: 1.5;
     text-align: center;
+    padding: 20px;
+    background: #e7e7e7;
 }
 
 .owl-wrapper img {
-    width:100%;
+    width: 100%;
 }
+
+
+.cat-banner {
+       background-color: #fff;
+    position: absolute;
+    left: 7%;
+    top: 0px;
+    width: 86%;
+    height: 100%;
+    opacity: 0.9;
+    vertical-align: middle;
+    padding: 10px 0px;
+}
+
+    .cat-banner h1 {
+        line-height: 1.5;
+        text-transform: uppercase;
+        font-weight: 600;
+        border-top: 2px solid #e7e7e7;
+        border-bottom: 2px solid #e7e7e7;
+    }
+
+/*.panel .mid h1 span {
+    display: block;
+    letter-spacing: 10px;
+}*/
+
+
+/*.banner-head span, .banner-foot span {
+    font-size: 10px;
+    font-style: italic;
+    padding: 5px 0px;
+}*/
+
+
+    .banner-head span:first-child:after, .banner-foot span:first-child:after {
+        content: '/';
+    }
