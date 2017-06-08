@@ -126,17 +126,27 @@ input[type=submit] {
     width: 100%;
 }
 
+.cat-content{
+    padding:10px;    
+}
+
+.display-table{
+   display: table;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #fff;
+}
 
 .cat-banner {
-       background-color: #fff;
+   background-color: #fff;
     position: absolute;
-    left: 7%;
-    top: 0px;
-    width: 86%;
-    height: 100%;
+    left: 4%;
+    top: 6%;
+    width: 93%;
     opacity: 0.9;
+    display: table-cell;
     vertical-align: middle;
-    padding: 10px 0px;
+    padding: 15px 0px;
 }
 
     .cat-banner h1 {
@@ -147,19 +157,25 @@ input[type=submit] {
         border-bottom: 2px solid #e7e7e7;
     }
 
-/*.panel .mid h1 span {
+.panel .mid h1 span {
     display: block;
     letter-spacing: 10px;
-}*/
+}
 
+.cat-banner-head, .cat-banner-foot{
+    padding:14px 0px;
+}
 
-/*.banner-head span, .banner-foot span {
-    font-size: 10px;
+.cat-banner-head span, .cat-banner-foot span {
+    font-size: 12px;
     font-style: italic;
-    padding: 5px 0px;
-}*/
+}
 
-
-    .banner-head span:first-child:after, .banner-foot span:first-child:after {
+    .cat-banner-head span:first-child:after, .cat-banner-foot span:first-child:after {
         content: '/';
+    }
+
+    .cat-banner .mid{
+        line-height: 26px;
+        font-size: 16px;
     }
