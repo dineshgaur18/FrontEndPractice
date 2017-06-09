@@ -2,15 +2,117 @@
 <html>
     <head>
         <title>Test Assignment</title>
+        <link rel="stylesheet" href="css/styles.css" />
     </head>
     <body>
-        <div>
+         <div id="wrapper">
             <header>
-                <img src="images/logo.png" alt="brand logo"/>
+                <div class="logo">
+               <a href="www.akqa.com">
+                   <img src="images/logo.png" alt="brand logo"/>
+                </a>
+                </div>
             </header>
-            <div>
+            <div class="container">
+                <div class="detail">
                 <h1>Your Basket</h1>
-                <p>Items you have added to your basket are shown below:</p>
+                <p>Items you have added to your basket are shown below.
+Adjust the quantities or remove items before continuing your purchase.</p>
+            </div>
+            <div class="basket">
+                <table>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Qty</th>
+                        <th>Cost</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            Cotton T-Shirt, Medium
+                        </td>
+                        <td>
+                            $1.99
+                        </td>
+                        <td>
+                            <input type="number">
+                        </td>
+                        <td>
+                            $1.99
+                        </td>
+                        <td>
+                            <a href="#"><img src="images/delete.png" alt="delete the record"/></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Cotton T-Shirt, Medium
+                        </td>
+                        <td>
+                            $1.99
+                        </td>
+                        <td>
+                            <input type="number">
+                        </td>
+                        <td>
+                            $1.99
+                        </td>
+                        <td>
+                            <a href="#"><img src="images/delete.png" alt="delete the record"/></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Cotton T-Shirt, Medium
+                        </td>
+                        <td>
+                            $1.99
+                        </td>
+                        <td>
+                            <input type="number">
+                        </td>
+                        <td>
+                            $1.99
+                        </td>
+                        <td>
+                            <a href="#"><img src="images/delete.png" alt="delete the record"/></a>
+                        </td>
+                    </tr>
+                </table>
+                <div class="total">
+                    <table>
+                        <tr>
+                            <td>
+                                Subtotal
+                            </td>
+                            <td>
+                                $11.96
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                VAT@20%
+                            </td>
+                            <td>
+                                $2.39
+                            </td>
+                            <tr>
+                            <td>
+                                Total Cost
+                            </td>
+                            <td>
+                                $14.35
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="submit" value="Buy Now>>"/>
+                            </td>
+                        </tr>    
+                        
+                    </table>
+                </div>
+            </div>
             </div>
         </div>
     </body>
