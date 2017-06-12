@@ -1,0 +1,52 @@
+<div class="basket-desc">
+    <h1>Your Basket</h1>
+    <p>Items you have added to your basket are shown below.
+Adjust the quantities or remove items before continuing your purchase.</p>
+</div>
+<div class="basket-head">
+    <span class="item-col">Product</span>
+    <span class="item-col">Price</span>
+    <span class="item-col">Qty</span>
+    <span class="item-col">Cost</span>
+</div>
+<div class="basket-row" >
+    <div ng-repeat="item in product.ProductItems">
+        <span class="item-col prod">{{item.item}}</span>
+        <span class="item-col price">{{product.CurrencySymbol + item.price}}</span>
+        <span class="item-col qty"><input type="number" ng-model="item.quantity" ng-change="product.CalculateCost($index)" /></span>
+        <span class="item-col cost">{{item.cost}}</span>
+        <span class="item-col remove"><a href="#" ng-click="product.RemoveItem($index)"><img src="images/delete.png" alt="delete the item"/></a></span>
+    </div>
+
+<div class="total">
+    <table>
+        <tr>
+            <td>
+                Subtotal
+            </td>
+            <td>
+                {{product.CurrencySymbol + product.SubTotalAmount}}
+            </td>
+        </tr>
+        <tr>
+            <td>
+                VAT@20%
+            </td>
+            <td>
+                {{product.CurrencySymbol + product.VatAmount}}
+            </td>
+        <tr>
+            <td>
+                Total Cost
+            </td>
+            <td>
+                {{product.TotalAmount}}
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" ng-disabled="product.ProductItems.length==0" value="Buy Now>>" />
+            </td>
+        </tr>
+    </table>
+</div>  </div>      

@@ -1,0 +1,248 @@
+body{
+    font-size:12px;
+    line-height: 1.25;
+    font-family: 'Droid Serif', serif;
+    letter-spacing: 0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+div, span, h1, h2, h3, h4, h5, h6, p, table, tr, th, td{
+    border: 0;
+    font-family: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+a{
+    text-decoration: none;
+}
+
+.btn{
+    font-family: 'Driod Sans', sans-serif;
+    color: #fff;
+    background-color:#000066;
+    font-size: 24px;
+    font-weight:bold;
+    border: none;
+    border-radius: 12px;
+    letter-spacing: -1px;
+    padding: 12px 10px;
+}
+
+.btn-disabled{
+    background-color: #ccc !important;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width:100%;
+}
+
+table tr {
+  padding: .35em;
+}
+
+table th,
+table td {
+ font-size: 1.5em;
+ padding: .805em;
+ text-align: left;
+}
+
+#wrapper{
+    padding: 0px;
+    margin: 0 auto;
+    background-color:#f4f4f4; 
+    box-shadow: 0px 2px 5px 0 #ccc;    
+}
+
+header{
+    margin: 10px 0px;
+}
+
+.logo {
+ padding: 35px 10px 10px 15px;
+}
+
+.container{
+    padding:20px;
+
+}
+
+.basket-desc{
+    padding: 25px 15px;
+}
+
+.basket-desc h1{
+    font-size: 30px;
+    line-height: 40px;
+    text-shadow: 0px 2px 1px #ccc;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+.basket-desc p{
+    white-space: pre;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+}
+
+.basket{
+    margin: 20px 0px;
+    border-collapse: collapse;
+}
+
+table.basket tr.basket-head th{
+    border-bottom:2px solid #999999;
+    font-weight: 600;
+}
+
+table.basket .remove{
+    padding-left:10px;
+    background-color: #f4f4f4;
+}
+
+table.basket .remove span{
+    cursor: pointer
+}
+
+.item-col input[type="number"]{
+ width: 45px;
+ font-size: 1em;
+ height: 1.8em;
+ text-align: right;
+}
+
+#btnSubmit{
+    color: #fff !important;  
+}
+
+#btnSubmit::after{
+    content:" \203A\203A";
+}
+
+.total{
+    margin: 20px 0px;
+}
+
+#tblTotal tr td, #tblTotal tr td span{
+    color: #8f8f8f;
+    padding-top: 25px;
+}
+
+#tblTotal tr td{
+    padding-left:15px; 
+}
+
+#tblTotal tr.gTotal td, #tblTotal tr.gTotal td span{
+    color: #000;
+    font-weight: bold;
+}
+
+/*------- Media Queries-------*/
+@media screen and (max-width: 620px) {
+    table {
+        border: 0;
+    }
+
+    table thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+
+    table tr {
+        border-bottom: 3px solid #999999;
+        display: block;
+        margin-bottom: .625em;
+
+        border: 1px solid #999999;
+    }
+
+    table td {
+        border-bottom: 1px solid #999999;
+        display: block;
+        font-size: 1em;
+        text-align: right;
+    }
+
+    table td:before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    table td:last-child {
+        border-bottom: 0;
+    }
+
+    #tblTotal tr:last-child
+    {
+      border:none;
+    }
+
+    #btnSubmit{
+        font-size: 1.1em !important;
+        padding: 8px 7px !important;
+    }
+}
+
+
+@media only screen and (min-width:620px) and (max-width:680px){
+    #btnSubmit{
+        font-size: 1.15em !important;
+        padding: 12px 8px !important;
+    }
+}
+
+@media only screen and (min-width:680px){
+    #btnSubmit{
+        font-size: 1.35em !important;
+        padding: 15px 10px !important;
+    }
+
+@media only screen and (min-width:620px){
+    #wrapper {
+        width: 90%;
+    }
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .basket tr.basket-row:nth-child(even){
+        background-color: #ddd;
+    }
+
+    #tblTotal tr:first-child td{
+        width: 75%;
+    }
+    #tblTotal tr:last-child td{
+        text-align: right;
+        /*padding-right: 14.4em;*/
+        padding-right: 3.4em;
+        padding-top: 70px;
+    }
+
+    table.basket .remove img{
+       height: 24px;
+   }
+
+}
+

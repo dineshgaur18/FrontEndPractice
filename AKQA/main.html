@@ -1,66 +1,74 @@
 <!DOCTYPE html>
-<html ng-app="basketApp">
-    <head>
-        <title>Test Assignment</title>
-        <link rel="stylesheet" href="styles.css" />
-    </head>
-    <body>
-         <div id="wrapper">
-            <header>
-                <div class="logo">
-               <a href="www.akqa.com">
-                   <img src="images/logo.png" alt="brand logo"/>
-                </a>
-                </div>
-            </header>
-            <div class="container">
-                <div ng-controller="coreController as core"></div>
-                <div ui-view></div>
+<html>
+<head>
+    <title>AKQA Your Basket</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+   <div id="wrapper">
+      <div class="container">
+        <header>
+            <div class="logo">
+             <a href="www.akqa.com">
+                 <img src="images/logo.png" alt="brand logo"/>
+             </a>
+             </div>
+         </header>
 
-                <div class="total">
-                    <table>
-                        <tr>
-                            <td>
-                                Subtotal
-                            </td>
-                            <td>
-                                $11.96
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                VAT@20%
-                            </td>
-                            <td>
-                                $2.39
-                            </td>
-                            <tr>
-                            <td>
-                                Total Cost
-                            </td>
-                            <td>
-                                $14.35
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="submit" value="Buy Now>>"/>
-                            </td>
-                        </tr>    
-                    </table>
-                </div>
-            </div>
-            </div>
+         <div class="basket-desc">
+            <h1>Your Basket</h1>
+            <p>Items you have added to your basket are shown below.</p>
+            <p>Adjust the quantities or remove items before continuing your purchase.</p>
         </div>
-
-<script src="scripts/angular.min.js"></script>
- <script src="scripts/angular-ui-router.min.js"></script> 
-
- <script src="app/app.js"></script>
- <script src="app/config.js"></script>
- <script src="app/controllers/coreController.js"></script>
- <script src="app/controllers/productController.js"></script>
-
-
-    </body>
+        <div>
+            <table class="basket">
+                <thead>
+                    <tr class="basket-head">
+                        <th scope="col" class="item-col prod">Product</th>
+                        <th scope="col" class="item-col price">Price</th>
+                        <th scope="col" class="item-col qty">Qty</th>
+                        <th scope="col" class="item-col cost">Cost</th>
+                    </tr>
+                </thead>
+            </table>          
+            <table id="tblTotal">
+                <tr>
+                    <td>
+                        Subtotal
+                    </td>
+                    <td>
+                        <span id="subTotal"> $11.96</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        VAT@20%
+                    </td>
+                    <td>
+                        <span id="vatAmount"> $2.39</span>
+                    </td>
+                </tr>
+                <tr class="gTotal">
+                    <td>
+                        Total Cost
+                    </td>
+                    <td>
+                        <span id="totalAmount"> $14.96</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <a href="#"> <span id="btnSubmit" class="btn">Buy Now</span></a>
+                    </td>
+                </tr>    
+            </table>
+        </div>
+    </div>
+</div>
+<script src="http://code.jquery.com/jquery-1.9.0.js"></script>
+<script src="scripts/modernizr-2.6.2.js"></script>
+<script src="scripts/basket.js"></script>
+</body>
 </html>

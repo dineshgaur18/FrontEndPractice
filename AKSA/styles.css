@@ -17,8 +17,7 @@ input[type="submit"]{
    width: 1280px;
     padding: 0px;
     margin: 0 auto;
-        background-color:#f4f4f4; 
-    box-shadow: 0px 2px 5px 0 #ccc;    
+    box-shadow: 0px 2px 5px 0 #ccc;
 }
 
 header{
@@ -31,7 +30,6 @@ header{
 
 .container{
     padding:20px;
-
 }
 
 .basket-desc{
@@ -52,47 +50,13 @@ header{
 
 .basket{
     margin: 20px 0px;
-    border-collapse: collapse;
 }
 
-.basket tr.basket-row{
-    height: 50px;
-}
-
-.basket tr.basket-row:nth-child(odd){
-    background-color: #ddd;
-}
-
-table.basket tr.basket-head th{
+.basket-head{
     border-bottom:2px solid #ccc;
-    font-weight: 600;
 }
 
-table.basket tr th, table.basket tr td{
-    font-size: 18px;
-    text-align: left;
-} 
-    table.basket tr td{
-        padding: 10px;
-    }
-
-    table.basket .prod{
-        width: 15em;
-    }
-    table.basket .price{
-        width: 4em;
-    }
-    table.basket .qty{
-        width: 5em;
-    }
-    table.basket .cost{
-            width: 4em;
-    }
-    table.basket .remove{
-        width: 4em;
-        padding-left:10px;
-    }
-    /*.basket-head span{
+    .basket-head span{
         font-weight: 600;
     }
 
@@ -103,7 +67,7 @@ table.basket tr th, table.basket tr td{
 .item-col span{
     font-size: 18px;
     display: inline-block;
-}*/
+}
 
 .item-col input[type="number"]{
     width: 45px;

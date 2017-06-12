@@ -53,6 +53,48 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Lifestyle-RWD", "http://loc
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "AKQA", "http://localhost:51062", "{0AD03CD8-AA68-4A7B-8938-E4F2555E2A24}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_51062"
+		Debug.AspNetCompiler.PhysicalPath = "AKQA\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51062\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_51062"
+		Release.AspNetCompiler.PhysicalPath = "AKQA\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51062\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "AKQA\"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "AKSA", "http://localhost:51065", "{7B974092-CC37-4FC5-A914-5E868904B9BB}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_51065"
+		Debug.AspNetCompiler.PhysicalPath = "AKSA\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51065\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_51065"
+		Release.AspNetCompiler.PhysicalPath = "AKSA\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51065\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "AKSA\"
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -71,6 +113,14 @@ Global
 		{5A058A7B-DDEB-4F95-924E-44BB62217561}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A058A7B-DDEB-4F95-924E-44BB62217561}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{5A058A7B-DDEB-4F95-924E-44BB62217561}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{0AD03CD8-AA68-4A7B-8938-E4F2555E2A24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AD03CD8-AA68-4A7B-8938-E4F2555E2A24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AD03CD8-AA68-4A7B-8938-E4F2555E2A24}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AD03CD8-AA68-4A7B-8938-E4F2555E2A24}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{7B974092-CC37-4FC5-A914-5E868904B9BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B974092-CC37-4FC5-A914-5E868904B9BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B974092-CC37-4FC5-A914-5E868904B9BB}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B974092-CC37-4FC5-A914-5E868904B9BB}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
