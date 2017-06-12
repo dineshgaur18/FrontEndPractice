@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="basketApp">
     <head>
         <title>Test Assignment</title>
-        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
          <div id="wrapper">
@@ -14,71 +14,9 @@
                 </div>
             </header>
             <div class="container">
-                <div class="detail">
-                <h1>Your Basket</h1>
-                <p>Items you have added to your basket are shown below.
-Adjust the quantities or remove items before continuing your purchase.</p>
-            </div>
-            <div class="basket">
-                <table>
-                    <tr>
-                        <th>Product</th>
-                        <th>Price</th>
-                        <th>Qty</th>
-                        <th>Cost</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            Cotton T-Shirt, Medium
-                        </td>
-                        <td>
-                            $1.99
-                        </td>
-                        <td>
-                            <input type="number">
-                        </td>
-                        <td>
-                            $1.99
-                        </td>
-                        <td>
-                            <a href="#"><img src="images/delete.png" alt="delete the record"/></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Cotton T-Shirt, Medium
-                        </td>
-                        <td>
-                            $1.99
-                        </td>
-                        <td>
-                            <input type="number">
-                        </td>
-                        <td>
-                            $1.99
-                        </td>
-                        <td>
-                            <a href="#"><img src="images/delete.png" alt="delete the record"/></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Cotton T-Shirt, Medium
-                        </td>
-                        <td>
-                            $1.99
-                        </td>
-                        <td>
-                            <input type="number">
-                        </td>
-                        <td>
-                            $1.99
-                        </td>
-                        <td>
-                            <a href="#"><img src="images/delete.png" alt="delete the record"/></a>
-                        </td>
-                    </tr>
-                </table>
+                <div ng-controller="coreController as core"></div>
+                <div ui-view></div>
+
                 <div class="total">
                     <table>
                         <tr>
@@ -109,11 +47,20 @@ Adjust the quantities or remove items before continuing your purchase.</p>
                                 <input type="submit" value="Buy Now>>"/>
                             </td>
                         </tr>    
-                        
                     </table>
                 </div>
             </div>
             </div>
         </div>
+
+<script src="scripts/angular.min.js"></script>
+ <script src="scripts/angular-ui-router.min.js"></script> 
+
+ <script src="app/app.js"></script>
+ <script src="app/config.js"></script>
+ <script src="app/controllers/coreController.js"></script>
+ <script src="app/controllers/productController.js"></script>
+
+
     </body>
 </html>
